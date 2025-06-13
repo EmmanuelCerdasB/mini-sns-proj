@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Posts - Mini SNS</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/posts.css" />
+  </head>
+  <body>
+    <!-- <a href="/logout">Logout</a> -->
+    <%- include("header") %>
+    <h1>📋 Recent Posts</h1>
+
+    <!-- Container for all posts -->
+    <div class="post-list">
+      <% posts.forEach(function(post) { %> <%- include("feed", { post: post })%>
+      <% }); %>
+    </div>
+
+    <br />
+
+    <%- include("footer") %>
+  </body>
+
+  <script src="js/posts.js"></script>
+</html>

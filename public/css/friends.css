@@ -1,0 +1,58 @@
+.add-friend-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.friends-list-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+form {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 100px;
+  border: 1px solid #ccc;
+}
+button {
+  color: #3498db;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.1s ease;
+  cursor: pointer;
+  border: none;
+}
+
+button:hover {
+  color: #ffffff;
+  background-color: #3498db;
+  transition: background-color 0.1s ease;
+  cursor: pointer;
+}

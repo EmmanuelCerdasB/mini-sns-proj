@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Mini SNS</title>
+  </head>
+  <body>
+    <h1>Welcome to Mini SNS</h1>
+    <center>
+      <p>Welcome to your first social media play ground -- created by you!</p>
+    </center>
+    <% if (!username) { %>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form method="POST" action="/login">
+        <label for="username">username:</label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Enter username"
+          required
+        /><br />
+        <label for="password">password:</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Enter password"
+          required
+        /><br />
+        <div class="btns-LR">
+          <button type="submit">Login</button>
+          <a class="btn-register" href="/register">Register</a>
+        </div>
+      </form>
+    </div>
+    <% } else { %>
+
+    <div class="div-minimenu">
+      <h2>Go to:</h2>
+      <ul class="mini-menu">
+        <li><a href="/write">✍️ Write a Post.</a></li>
+        <br />
+        <li><a href="/posts">🗒️ View Posts.</a></li>
+        <br />
+        <li><a href="/friends/list">👥 View friends</a></li>
+        <br />
+        <li><a href="/logout">🚪 Logout</a></li>
+      </ul>
+    </div>
+
+    <% } %>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register - Mini SNS</title>
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/register.css" />
+  </head>
+  <body>
+    <%- include ("header" )%>
+    <div class="register-container">
+      <h1>Register</h1>
+      <form action="/register" method="post">
+        <label for="username">Username:</label><br />
+        <input type="text" id="username" name="username" required /><br /><br />
+        <label for="password">Password:</label><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+        <label for="name">Name:</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <button type="submit">Register</button>
+      </form>
+      <br />
+    </div>
+    <%- include("footer") %>
+  </body>
+</html>
