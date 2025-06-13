@@ -19,4 +19,4 @@
  5. **Access the Application**- Open [http://localhost:3000](
  http://localhost:3000) in your browser to use the application.
  ## Tech Stack- **Frontend**- HTML, CSS, JavaScript- EJS (Template Engine)- Bootstrap (UI Framework)- **Backend**- Node.js- Express.js- **Database**- MongoDB- Mongoose (MongoDB ODM)- **Others**- bcrypt (Password Encryption)- express-session (Session Management)- morgan (HTTP Request Logging)
- ## Author- **Name**: DongYeop Hwang- **Date**: 2025.05.10
+ ## Author- **Name**: Emmanuel Cerdas Brenes- **Date**: 12.06.2025
